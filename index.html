@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script language="javascript"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<title></title>
+<style>
+#maincard{
+margin: auto;
+margin-top: 50px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 15px;
+  background-color: #f0f0f0;
+  display: inline-block;
+}
+#card{
+display: inline-block;
+margin: 10px;
+  width: 100%;
+  border: 1px solid black;
+  background-color: #f0f0f0;
+}
+h5{
+text-align: center;
+}
+h1{
+margin-top: 30px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Умный дверной звонок</h1>
+
+<div id="maincard" class="card" style="width: 20rem;">
+
+<input type="checkbox" class="btn-check" id="btn1" autocomplete="off">
+<label style="margin: 5px;" class="btn btn-outline-primary" for="btn1">Датчик включения</label><br>
+
+<input type="checkbox" class="btn-check" id="btn2" autocomplete="off">
+<label style="margin: 5px;" class="btn btn-outline-primary" for="btn2">Датчик обнаружения</label><br>
+
+<input type="checkbox" class="btn-check" id="btn3" autocomplete="off">
+<label style="margin: 5px;" class="btn btn-outline-primary" for="btn3">Датчик звонка</label><br>
+
+<input type="checkbox" class="btn-check" id="btn4" autocomplete="off">
+<label style="margin: 5px;" class="btn btn-outline-primary" for="btn4">Датчик заряда батареи</label><br>
+
+<input type="checkbox" class="btn-check" id="btn5" autocomplete="off">
+<label style="margin: 5px;" class="btn btn-outline-primary" for="btn5">Датчик движения</label><br>
+</div>
+
+<div name="btnans1" id="card" class="card" style="width: 18rem;">
+	<h5>Датчик включения</h5>
+  <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Включить дверной звонок</label>
+</div>
+</div>
+
+<div name="btnans2" id="card" class="card" style="width: 18rem;">
+	<h5>Датчик обнаружения</h5>
+  <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Включить модуль</label>
+</div>
+</div>
+
+<div name="btnans3" id="card" class="card" style="width: 18rem;">
+	<h5>Датчик звонка</h5>
+  <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Включить модуль</label>
+</div>
+</div>
+
+<div name="btnans4" id="card" class="card" style="width: 18rem;">
+	<h5>Датчик заряда батареи</h5>
+  <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Включить модуль</label>
+</div>
+</div>
+
+<div name="btnans5" id="card" class="card" style="width: 18rem;">
+	<h5>Датчик движения</h5>
+  <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Включить модуль</label>
+</div>
+</div>
+
+</div>
+<script>
+	$(function() {
+		$('#btn1').on('click', function() {
+		  $('div[name ="btnans1"]') .fadeToggle(200);
+		});	
+		$('#btn2').on('click', function() {
+		  $('div[name ="btnans2"]') .fadeToggle(200);
+		});
+		$('#btn3').on('click', function() {
+		  $('div[name ="btnans3"]') .fadeToggle(200);
+		});
+		$('#btn4').on('click', function() {
+		  $('div[name ="btnans4"]') .fadeToggle(200);
+		});
+		$('#btn5').on('click', function() {
+		  $('div[name ="btnans5"]') .fadeToggle(200);
+		});
+	});
+</script>
+</body>
+</html>
